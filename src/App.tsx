@@ -6,7 +6,7 @@ const App: React.FC = () => {
   return (
     <>
       <Navbar />
-      <div className={styles.test}>
+      <div className={styles.container}>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
         consequatur commodi reiciendis repellat rem quae iste! Minima tempora
         animi placeat repellat doloribus laudantium perferendis aperiam magni
