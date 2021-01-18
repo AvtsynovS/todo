@@ -1,16 +1,15 @@
 import React from "react";
 import Navbar from "./components/NavBar/Navbar";
+import Exercise from "./Pages/Exercise/Exercise";
 import styles from "./styles.module.scss";
 
 const App: React.FC = () => {
+
   return (
     <>
       <Navbar />
       <div className={styles.container}>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
-        consequatur commodi reiciendis repellat rem quae iste! Minima tempora
-        animi placeat repellat doloribus laudantium perferendis aperiam magni
-        eveniet, assumenda nesciunt nisi.
+        <Exercise />
       </div>
     </>
   );
