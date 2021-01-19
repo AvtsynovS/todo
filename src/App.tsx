@@ -1,16 +1,17 @@
 import React from "react";
 import Navbar from "./components/NavBar/Navbar";
 import Exercise from "./Pages/Exercise/Exercise";
-import styles from "./styles.module.scss";
+import Todo from "./Pages/Todo/Todo";
+import { Switch, Route } from "react-router-dom";
 
 const App: React.FC = () => {
-
   return (
     <>
       <Navbar />
-      <div className={styles.container}>
-        <Exercise />
-      </div>
+      <Switch>
+        <Route exact path="/" component={Todo} />
+        <Route path="/exercise" component={Exercise} />
+      </Switch>
     </>
   );
 };
